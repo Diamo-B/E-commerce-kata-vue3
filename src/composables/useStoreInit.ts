@@ -44,10 +44,12 @@ export default function useStoreInit() {
         if (!prev.some((item) => item.product.id === product.id))
           cartItems.value = [...prev, { product: product, quantity: 1 }];
         else cartItems.value = prev;
+        this.items = cartItems.value
       },
       removeCartItem(id: number) {
         const prev = cartItems.value;
         cartItems.value = prev.filter((item) => item.product.id !== id);
+        this.items = cartItems.value
       },
       incrementQuantity(id: number) {
         cartItems.value = cartItems.value.map((item) => {
@@ -59,6 +61,7 @@ export default function useStoreInit() {
           }
           return item;
         });
+        this.items = cartItems.value
       },
       decrementQuantity(id: number) {
         cartItems.value = cartItems.value.map((item) => {
@@ -70,6 +73,7 @@ export default function useStoreInit() {
           }
           return item;
         });
+        this.items = cartItems.value
       },
     });
     return {cartValues, productsValue, categoryValue}

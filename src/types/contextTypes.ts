@@ -7,6 +7,11 @@ export type categoryContext =  Ref <{
   selected: string|null  
 }>
 
+export type destructuredCategoryContext = {
+  categoryValue: categoryContext,
+  setSelected: (category:string|null)=>void
+}
+
 export type productContext = Ref<{
     products: Product[];
 }>
