@@ -1,9 +1,23 @@
-# Vue 3 + TypeScript + Vite
-
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+# E-commerce-kata
+This project was made using a vite's boilerplate of vue3.
+To run the project you can follow one of these steps:
+## Access to the production build
+> The production build of the project is hosted in vercel. visit it by clicking [here](https://e-commerce-kata-vue3.vercel.app/)
+## Run the project locally
+1. Clone the project
+``` bash
+  git clone https://github.com/Diamo-B/E-commerce-kata-vue3.git <name of the containing folder>
+```
+2. Go into the directory
+``` bash
+  cd <name of the containing folder>
+```
+3. install the dependencies
+``` bash
+  npm install
+```
+4. Run the project
+``` bash
+  npm run dev
+```
+5. Access it via the browser on the [localhost](http://localhost:5173)
