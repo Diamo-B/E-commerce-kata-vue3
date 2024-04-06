@@ -9,7 +9,6 @@ type Props = {
 };
 const { product } = defineProps<Props>();
 
-const { categoryValue } = inject("categoriesContext");
 const cart:cartContext|undefined = inject("cartContext")
 </script>
 

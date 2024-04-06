@@ -2,7 +2,8 @@
 import { RouterLink } from 'vue-router';
 import {v4} from "uuid";
 import { inject } from 'vue';
-  const {categoryValue,setSelected} = inject("categoriesContext");
+import { destructuredCategoryContext } from '../../types/contextTypes';
+  const {categoryValue,setSelected} = inject("categoriesContext") as destructuredCategoryContext;
 </script>
 
 <template>

@@ -2,10 +2,10 @@
 import { ComputedRef, computed, inject } from "vue";
 import ProductCard from "./ProductCard.vue";
 import { Product } from "../types/Product";
-import { productContext } from "../types/contextTypes";
+import { destructuredCategoryContext, productContext } from "../types/contextTypes";
 
 
-const { categoryValue, setSelected } = inject("categoriesContext");
+const { categoryValue, setSelected } = inject("categoriesContext") as destructuredCategoryContext
 const productsContext:productContext|undefined = inject("productsContext");
 const filteredProducts: ComputedRef<Product[]|undefined> = computed(() => {
   if (categoryValue.value.selected) {
